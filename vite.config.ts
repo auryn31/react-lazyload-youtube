@@ -4,10 +4,16 @@ import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 
 export default defineConfig({
+  resolve: {
+    alias: [
+      {
+        find: '@',
+        replacement: path.resolve(__dirname, './src'),
+      },
+    ],
+  },
   plugins: [
-    react({
-        jsxRuntime: 'classic',
-      }),
+    react(),
     dts({
       insertTypesEntry: true,
     }),
@@ -15,8 +21,8 @@ export default defineConfig({
   build: {
     minify: 'esbuild',
     lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'react-lazyload-youtube-ts',
+      entry: path.resolve(__dirname, 'src/index.tsx'),
+      name: 'index',
       formats: ['es', 'umd'],
       fileName: (format) => `index.${format}.js`,
     },
