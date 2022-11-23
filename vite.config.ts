@@ -16,7 +16,7 @@ export default defineConfig({
     minify: 'esbuild',
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'index',
+      name: 'react-lazyload-youtube-ts',
       formats: ['es', 'umd'],
       fileName: (format) => `index.${format}.js`,
     },
