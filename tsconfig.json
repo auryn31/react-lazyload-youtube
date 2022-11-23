@@ -4,7 +4,8 @@
   "exclude": ["dist", "build", "node_modules"],
   "compilerOptions": {
     "target": "ESNext",
-    "module": "commonjs",
+    "outDir": "./dist",
+    "module": "esnext",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
