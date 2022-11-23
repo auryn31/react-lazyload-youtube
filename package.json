@@ -5,27 +5,21 @@
   "module": "dist/index.umd.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
+  "type": "module",
   "exports": {
     ".": {
       "require": "./dist/index.cjs.js",
       "import": "./dist/index.es.js"
-    },
-    "./dist/style.css": "./dist/style.css"
+    }
   },
   "scripts": {
     "build": "tsc -b . && vite build"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
-    "@storybook/addon-actions": "^6.5.13",
-    "@storybook/addon-essentials": "^6.5.13",
-    "@storybook/addon-interactions": "^6.5.13",
-    "@storybook/addon-links": "^6.5.13",
-    "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/builder-vite": "^0.2.5",
-    "@storybook/react": "^6.5.13",
-    "@storybook/testing-library": "^0.0.13",
+    "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
+    "@types/styled-components": "^5.1.26",
     "@vitejs/plugin-react": "^2.2.0",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^8.3.0",
@@ -36,11 +30,15 @@
     "postcss-cli": "^10.0.0",
     "react": "^18.2.0",
     "sass": "^1.56.1",
-    "tailwindcss": "^3.2.2",
     "tsconfig": "*",
     "typescript": "^4.5.2",
     "vite": "^3.2.3",
     "vite-plugin-dts": "^1.7.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "styled-components": "^5.3.6"
+  },
+  "resolutions": {
+    "styled-components": "^5"
+  }
 }
