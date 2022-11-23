@@ -1,8 +1,16 @@
 {
   "name": "react-lazyload-youtube-ts",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
+  "main": "dist/index.es.js",
+  "module": "dist/index.umd.js",
+  "typings": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
