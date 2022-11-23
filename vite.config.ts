@@ -18,12 +18,14 @@ export default defineConfig({
       insertTypesEntry: true,
     }),
   ],
+  esbuild: {
+    jsxInject: `import React from 'react'`
+  },
   build: {
     minify: 'esbuild',
     lib: {
       entry: path.resolve(__dirname, 'src/index.tsx'),
       name: 'index',
-      formats: ['es', 'umd'],
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
