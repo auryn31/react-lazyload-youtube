@@ -36,3 +36,5 @@ const App = () => {
 ## License
 
 MIT © [auryn31](https://github.com/auryn31)
+
+[Buy me a coffee ☕️](https://www.buymeacoffee.com/auryn31)
