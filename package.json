@@ -1,10 +1,12 @@
 {
   "name": "react-lazyload-youtube-ts",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "dist/index.js",
   "module": "dist/index.umd.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
+  "repository": "auryn31/react-lazyload-youtube",
+  "author": "auryn31",
   "type": "module",
   "exports": {
     ".": {
